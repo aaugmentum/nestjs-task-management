@@ -10,3 +10,7 @@ export enum TaskStatus {
   IN_PROGRESS = 'IN_PROGRESS',
   DONE = 'DONE',
 }
+
+export function getTaskStatusesErrorString(): string {
+  return `status must be a valid value: ${Object.keys(TaskStatus).toString()}`;
+}
